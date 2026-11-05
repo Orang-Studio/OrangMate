@@ -1,0 +1,39 @@
+{
+  "name": "orangmate",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Chess game reviewer PWA - runs Stockfish in your browser.",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx",
+    "test": "vitest run",
+    "icons": "node scripts/gen-icons.mjs",
+    "fetch-assets": "node scripts/fetch-assets.mjs"
+  },
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.8",
+    "chessground": "^9.1.1",
+    "idb": "^8.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "stockfish": "^18.0.8",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.3",
+    "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^2.1.8"
+  }
+}
